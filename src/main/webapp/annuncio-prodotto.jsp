@@ -17,22 +17,25 @@
 			
 			<%@include file="template/header.jsp" %>
 			
-			<div><%= product.getImage() %></div>
-	
-			<div>
-				<%= product.getName() %>
-				<%= product.getDescription() %>
-				<%= product.getPrice() %>
-				
-				<form action="/carrello" method="post">
-				
-				    <label for="quantita">Quantità:</label>
-				    <input type="number" id="quantita" name="quantita" required><br><br>
-				
-				    <input type="submit" value="Aggiungi al carrello">
-			  </form>
-				
+			<div id="corpo-annuncio">
+				<div id="img-ann"><%= product.getImage() %></div>
+		
+				<div id="acquisto">
+					
+					<div id="nome"><%= product.getName() %> </div>
+					<div id="descrizione"> <%= product.getDescription() %> </div>
+					<div id="prezzo"> <%= product.getPrice() %></div>
+					
+					<div id="form-acquisto">
+						<form action="/carrello" method="post">
+						
+						    <label for="quantita">Quantità:</label>
+						    <input type="number" id="quantita" name="quantita" required><br><br>
+						
+						    <input type="submit" value="Aggiungi al carrello">
+					  </form>
+					</div>
+				</div>
 			</div>
-			
 		</body>
 </html>

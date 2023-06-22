@@ -24,7 +24,13 @@
 				<%= product.getDescription() %>
 				<%= product.getPrice() %>
 				
-				<form action=""></form>
+				<form action="/carrello" method="post">
+				
+				    <label for="quantita">Quantità:</label>
+				    <input type="number" id="quantita" name="quantita" required><br><br>
+				
+				    <input type="submit" value="Aggiungi al carrello">
+			  </form>
 				
 			</div>
 			

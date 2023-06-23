@@ -23,18 +23,17 @@
 				<div id="acquisto">
 					
 					<div id="nome"><%= product.getName() %> </div>
-					<div id="descrizione"> <%= product.getDescription() %> </div>
-					<div id="prezzo"> <%= product.getPrice() %></div>
+					<div id="descrizione"><%= product.getDescription() %> </div>
+					<div id="prezzo"><%= product.getPrice() %> </div>
 					
-					<div id="form-acquisto">
-						<form action="/carrello" method="post">
-						
-						    <label for="quantita">Quantità:</label>
-						    <input type="number" id="quantita" name="quantita" required><br><br>
-						
-						    <input type="submit" value="Aggiungi al carrello">
-					  </form>
-					</div>
+					<form action="/carrello" method="post">
+					
+					    <label for="quantita">Quantità:</label>
+					    <input type="number" id="quantita" name="quantita" required><br><br>
+					
+					    <input type="submit" value="Aggiungi al carrello">
+				  </form>
+					
 				</div>
 			</div>
 		</body>

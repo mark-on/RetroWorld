@@ -68,7 +68,11 @@
 			</div>
 
 			<div class="right">
-				<input type="text" placeholder="Cerca..."> <img src="image\cart.png" alt="cart">
+				<form action="/search" method="get">
+					<input type="text" placeholder="Cerca..."> 
+					<input type="submit" value="Cerca" />
+				</form>
+				<img src="image\cart.png" alt="cart">
 			</div>
 
 		</div>

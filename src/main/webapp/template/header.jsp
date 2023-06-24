@@ -68,8 +68,8 @@
 			</div>
 
 			<div class="right">
-				<form action="/search" method="get">
-					<input type="text" placeholder="Cerca..."> 
+				<form action="/researchServlet.java" method="get">
+					<input type="text" name="toSearch" placeholder="Cerca..."> 
 					<input type="submit" value="Cerca" />
 				</form>
 				<img src="image\cart.png" alt="cart">
